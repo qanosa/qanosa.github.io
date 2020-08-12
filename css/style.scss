@@ -1,0 +1,122 @@
+//imports form other files
+
+@import 'grid';
+@import 'variables';
+@import 'reset';
+@import 'animation';
+
+// sytlings for index.html
+
+body{
+    background-color: $color2;
+}
+.container-fluid{
+    background-color: $color1;
+
+    nav{
+        margin-top: -33px;
+        z-index: 1;
+        display: flex;
+        justify-content: space-evenly;
+        height: 30px;
+        position: fixed;
+        width: 100%;
+        background-color: $color1;
+        padding-top: 15px;
+        box-shadow: -3px 5px 5px #333, 3px 5px 5px #333;
+
+        div{
+
+            a{
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: color .3s;
+                font-family: $headerFont;
+                &:hover{
+                    color: $color4;
+                    border-bottom: 3px solid $color4;
+                }
+            }
+            .active{
+                color: $color4;
+                border-bottom: 3px solid $color4;
+            }
+        }
+    }
+}
+
+.main{
+
+    margin-top: -33px;
+    #qanosa-art{
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 4.5em;
+            margin-bottom: 0;
+            text-shadow: 2px 5px 1px #333, 3px 6px 2px #333, 4px 7px 3px #333;
+            animation: animate 5s ease-in-out infinite;
+        }
+        h5{
+            text-align: center;
+        }
+        div {
+            text-align: center;
+            background-color: $color1;
+            margin-right: 40px;
+            margin-left: 40px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color4;
+            }
+        }
+        
+    }
+    #intro{
+        .lead-intro{
+            h1{
+                text-align: center;
+                font-family: $headerFont;
+                margin: 0;
+            }
+            h4{
+                margin: 0;
+                padding-left: 15px
+            }
+            p{
+                padding-left: 15px;
+                padding-right: 5px;
+            }
+        }
+        .sub-intro{
+            h3{
+                font-family: $headerFont;
+                text-align: center;
+            }
+            p{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    footer{
+
+        background-color: $color1;
+        h6{ 
+            color: $color2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-align: center;
+            a{  
+                color: $color4;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,353 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+.container-fluid {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 33.75em) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .container {
+    max-width: 75rem;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^=col] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.3333333333%;
+}
+
+.col-2-sm {
+  width: 12.6666666667%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.3333333333%;
+}
+
+.col-5-sm {
+  width: 37.6666666667%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.3333333333%;
+}
+
+.col-8-sm {
+  width: 62.6666666667%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.3333333333%;
+}
+
+.col-11-sm {
+  width: 87.6666666667%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+@media only screen and (min-width: 45em) {
+  .col-1 {
+    width: 4.3333333333%;
+  }
+
+  .col-2 {
+    width: 12.6666666667%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.3333333333%;
+  }
+
+  .col-5 {
+    width: 37.6666666667%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.3333333333%;
+  }
+
+  .col-8 {
+    width: 62.6666666667%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.3333333333%;
+  }
+
+  .col-11 {
+    width: 87.6666666667%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@keyframes animate {
+  0% {
+    color: #031927;
+  }
+  25% {
+    color: #508AA8;
+  }
+  50% {
+    color: whitesmoke;
+  }
+  75% {
+    color: #031927;
+  }
+  100% {
+    color: #031927;
+  }
+}
+body {
+  background-color: #508AA8;
+}
+
+.container-fluid {
+  background-color: #031927;
+}
+.container-fluid nav {
+  margin-top: -33px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  background-color: #031927;
+  padding-top: 15px;
+  box-shadow: -3px 5px 5px #333, 3px 5px 5px #333;
+}
+.container-fluid nav div a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: "Acme";
+}
+.container-fluid nav div a:hover {
+  color: sandybrown;
+  border-bottom: 3px solid sandybrown;
+}
+.container-fluid nav div .active {
+  color: sandybrown;
+  border-bottom: 3px solid sandybrown;
+}
+
+.main {
+  margin-top: -33px;
+}
+.main #qanosa-art h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.5em;
+  margin-bottom: 0;
+  text-shadow: 2px 5px 1px #333, 3px 6px 2px #333, 4px 7px 3px #333;
+  animation: animate 5s ease-in-out infinite;
+}
+.main #qanosa-art h5 {
+  text-align: center;
+}
+.main #qanosa-art div {
+  text-align: center;
+  background-color: #031927;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.main #qanosa-art div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: sandybrown;
+}
+.main #intro .lead-intro h1 {
+  text-align: center;
+  font-family: "Acme";
+  margin: 0;
+}
+.main #intro .lead-intro h4 {
+  margin: 0;
+  padding-left: 15px;
+}
+.main #intro .lead-intro p {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.main #intro .sub-intro h3 {
+  font-family: "Acme";
+  text-align: center;
+}
+.main #intro .sub-intro p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.main footer {
+  background-color: #031927;
+}
+.main footer h6 {
+  color: #508AA8;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.main footer div {
+  text-align: center;
+}
+.main footer div a {
+  color: sandybrown;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
