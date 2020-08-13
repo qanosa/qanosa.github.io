@@ -300,6 +300,8 @@ body {
 }
 .main #qanosa-art h5 {
   text-align: center;
+  color: #f29648;
+  text-shadow: 5px 1px 10px #000;
 }
 .main #qanosa-art div {
   text-align: center;
@@ -312,12 +314,12 @@ body {
   text-transform: uppercase;
   color: sandybrown;
 }
-.main #intro .lead-intro h1 {
+.main #intro .lead-intro h2 {
   text-align: center;
   font-family: "Acme";
   margin: 0;
 }
-.main #intro .lead-intro h4 {
+.main #intro .lead-intro h6 {
   margin: 0;
   padding-left: 15px;
 }

@@ -60,6 +60,8 @@ body{
         }
         h5{
             text-align: center;
+            color: darken($color4, 5);
+            text-shadow: 5px 1px 10px #000;
         }
         div {
             text-align: center;
@@ -76,12 +78,12 @@ body{
     }
     #intro{
         .lead-intro{
-            h1{
+            h2{
                 text-align: center;
                 font-family: $headerFont;
                 margin: 0;
             }
-            h4{
+            h6{
                 margin: 0;
                 padding-left: 15px
             }
